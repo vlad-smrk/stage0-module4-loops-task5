@@ -8,10 +8,7 @@ public class Hourglass {
             }
             int length = Math.abs(i);
             int offset = (height - length) / 2;
-            Cross.multiplyString(" ", offset);
-            Cross.multiplyString("8", length);
-            Cross.multiplyString(" ", offset);
-            System.out.println();
+            System.out.println(" ".repeat(offset) + "8".repeat(length) + " ".repeat(offset));
         }
     }
 

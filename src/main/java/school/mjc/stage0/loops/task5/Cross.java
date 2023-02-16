@@ -6,20 +6,10 @@ public class Cross {
         int middle = sideLength / 2;
         for (int i = 0; i < sideLength; i++) {
             if (i == middle) {
-                multiplyString(symbol, sideLength);
-                System.out.println();
+                System.out.println(symbol.repeat(sideLength));
                 continue;
             }
-            multiplyString(" ", middle);
-            System.out.print(symbol);
-            multiplyString(" ", middle);
-            System.out.println();
-        }
-    }
-
-    static void multiplyString(String string, int times) {
-        for (int i = 0; i < times; i++) {
-            System.out.print(string);
+            System.out.println(" ".repeat(middle) + symbol + " ".repeat(middle));
         }
     }
 

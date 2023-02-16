@@ -5,13 +5,10 @@ public class Square {
         String symbol = "8";
         for (int i = 0; i < sideLength; i++) {
             if (i == 0 || i == sideLength - 1) {
-                Cross.multiplyString(symbol, sideLength);
-                System.out.println();
+                System.out.println(symbol.repeat(sideLength));
                 continue;
             }
-            System.out.print(symbol);
-            Cross.multiplyString(" ", sideLength - 2);
-            System.out.println(symbol);
+            System.out.println(symbol + " ".repeat(sideLength - 2) + symbol);
         }
     }
 }

@@ -5,13 +5,10 @@ public class Rectangle {
         String symbol = "8";
         for (int i = 0; i < height; i++) {
             if (i == 0 || i == height - 1) {
-                Cross.multiplyString(symbol, length);
-                System.out.println();
+                System.out.println(symbol.repeat(length));
                 continue;
             }
-            System.out.print(symbol);
-            Cross.multiplyString(" ", length - 2);
-            System.out.println(symbol);
+            System.out.println(symbol + " ".repeat(length - 2) + symbol);
         }
     }
 
