@@ -11,7 +11,9 @@ public class Cross {
                 continue;
             }
             multiplyString(" ", middle);
-            System.out.println(symbol);
+            System.out.print(symbol);
+            multiplyString(" ", middle);
+            System.out.println();
         }
     }
 

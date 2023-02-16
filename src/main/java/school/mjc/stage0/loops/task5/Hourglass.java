@@ -7,13 +7,18 @@ public class Hourglass {
             int offset = (height - i) / 2;
             Cross.multiplyString(" ", offset);
             Cross.multiplyString("8", i);
+            Cross.multiplyString(" ", offset);
             System.out.println();
             last = i;
         }
-        for (int i = last + 2; i <= height; i += 2) {
+        if (last == 1) {
+            last += 2;
+        }
+        for (int i = last; i <= height; i += 2) {
             int offset = (height - i) / 2;
             Cross.multiplyString(" ", offset);
             Cross.multiplyString("8", i);
+            Cross.multiplyString(" ", offset);
             System.out.println();
         }
     }
